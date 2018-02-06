@@ -2,6 +2,11 @@
 function Mostrar()
 {
 var base;
+var perimetro;	
+
 base=document.getElementById('laBase').value;
-alert("El perimetro es : "+base*4);
+
+perimetro=base*4;
+
+alert("El perimetro es : "+perimetro);
 }
