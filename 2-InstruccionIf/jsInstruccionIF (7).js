@@ -1,17 +1,17 @@
 function Mostrar()
 {
 //tomo la edad  
-var edad;
-var estadoCivil;
+	var edad;
+	var estadoCivil;
+	edad=document.getElementById('edad').value;
+	estadoCivil=document.getElementById('estadoCivil').value;
 
-edad=document.getElementById('edad').value;
+	if (edad<18&& estadoCivil!="Soltero")
+	 {
+	 	alert("Es muy pequeño para NO ser soltero");
+	 }
 
-estadoCivil=document.getElementById('estadoCivil').value;
-//se puede poner el if deotro del otro cuando es &&, si fuera un o se pone afuera
-if(edad<18&&estadoCivil!="soltero")
-{
-alert("Es muy pequeño para No ser soleto");
-}
+	
 
 
 }//FIN DE LA FUNCIÓN
