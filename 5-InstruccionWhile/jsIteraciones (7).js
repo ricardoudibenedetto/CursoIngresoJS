@@ -6,19 +6,20 @@ function Mostrar()
 	var respuesta='si';
 	var numero;
 	var promedio;
+
 	while(respuesta=="si")
 	{
 		contador++;
-		numero=prompt("ingrese un numero ");
+		numero=prompt("ingrese un numero");
 		numero=parseInt(numero);
-		acumulador=acumulador+numero; //SUMARLRE EL NUMERO AL ACUMULADOR
-
-		respuesta=prompt("Si para continuar"); //modifica el while y lo hace falso, saliendo del bucle
-
-
+		acumulador=acumulador+numero;
+		respuesta=prompt("si para continuar"); 
 	}
-	promedio=acumulador/contador;
-	document.getElementById('suma').value=acumulador;
-	document.getElementById('promedio').value=promedio;
+
+
+
+
+document.getElementById('suma').value=acumulador;
+document.getElementById('promedio').value=acumulador/contador;
 
 }//FIN DE LA FUNCIÓN
